@@ -135,6 +135,110 @@ int main()
             break;
         }
 
+        /*
+           /*
+Assignment no.6: Implementation of queue using array.
+*/
+#include <iostream>
+#define MAX 5
+
+using namespace std;
+
+class order
+{
+public:
+int queue[MAX];
+int rear = -1;
+int front = -1;
+
+void en_queue()
+{
+if (rear == MAX - 1)
+{
+        cout << "\nOrder cannot be accepted" << endl;
+    }
+    else
+    {
+        int ele;
+        cout << "\nEnter the new order: ";
+        cin >> ele;
+        rear++;
+        queue[rear] = ele;
+    }
+}
+
+void de_queue()
+{
+    if (front == rear)
+    {
+        cout << "\nAll the ordrs are served." << endl;
+        front = -1;
+        rear = -1;
+    }
+    else
+    {
+        front++;
+        int ele = queue[front];
+        cout << "\nThe order served is " << ele << endl;
+    }
+}
+
+void display()
+{
+    if (front == rear)
+    {
+        cout << "\nAll the orders are served." << endl;
+    }
+    else
+    {
+        cout << "\nOrders are served in the sequence : ";
+        for (int i = front + 1; i <= rear; i++)
+        {
+        cout << queue[i] << " ";
+        }
+        cout << endl;
+    }
+}
+};
+
+int main()
+{
+int choice, ch;
+    order b;
+    do
+    {
+        cout << "\n1. Enter the new order.\n2. serve the order\n3. Display the sequence of order to be served.\n";
+        cout << "\nEnter your choice: ";
+        cin >> ch;
+       
+        switch (ch)
+        {
+        case 1:
+             b.en_queue();
+             break;
+             
+        case 2:
+           b.de_queue();
+           break;
+           
+        case 3:
+           b.display();
+           break;
+           
+        default:
+           cout << "\nInvalid choice" << endl;
+           break;    
+        }
+       
+        cout << "\nPress 1 to continue: ";
+        cin >> choice;
+       
+    } while (choice == 1);
+
+    return 0;
+}
+            */
+
     } while (ch != 6);
 
     return 0;
