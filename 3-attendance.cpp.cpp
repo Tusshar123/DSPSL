@@ -272,7 +272,7 @@ int main() {
 
 
 
-//Abhijit code 
+ 
 /*
 	Assignment 3: checking students have attended the training program or not.
 */
@@ -460,6 +460,4 @@ int main()//Main function
 }
 
 
-
-// simple code aditya code 
  
