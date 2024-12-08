@@ -71,7 +71,7 @@ int main()
 			break;
 
 		case 2:
-			cout << setw(15) << left << "Class"                            //It will display 'a', as we are going to perform operation on 'a' only...
+			cout << setw(15) << left << "Class"                            
 			     << setw(15) << left << "Roll no"
 			     << setw(10) << right << "Name" << endl;
 
